@@ -6,7 +6,11 @@
     });
     const button = document.querySelector('#create-tab-button');
     button.addEventListener('click', () => {
-        // Value: myCodeMirror.getValue();
+        const newValue = myCodeMirror.getValue();
+        const newContainer = document.createElement('div');
+        newContainer.setAttribute('class', 'container');
+        newContainer.innerHTML += newValue;
+        document.body.appendChild(newContainer);
         myCodeMirror.setValue('');
     });
 
