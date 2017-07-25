@@ -11,7 +11,6 @@ main {
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
-  height: 350px;
   margin: 100px auto;
   overflow: hidden;
   width: 600px;
@@ -50,3 +49,14 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
+/*.container {
+    margin-left: 10px;
+    border: 1px solid;
+    width: 300px;
+    height: auto;
+}
+
+.container input {
+    width: inherit;
+    outline: transparent;
+}*/

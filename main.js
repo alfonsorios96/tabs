@@ -6,6 +6,13 @@
   let tabs = document.querySelectorAll('.tab');
   const containers = document.querySelector('#containers');
   const create = document.querySelector('#create');
+  const editor = document.querySelector('#editor');
+  const button = document.querySelector('#create-tab-button');
+
+  let myCodeMirror = CodeMirror.fromTextArea(editor, {
+          lineNumbers: true,
+          mode: "htmlmixed"
+  });
 
   // Event Listeners
   (function listenerCreatorLoop() {
@@ -42,17 +49,22 @@
   function createTab() {
     // New tab
     tabCounter = tabCounter + 1;
+    const newTabTitle = document.querySelector('#tab-title');
     let newTab = document.createElement("LI");
-    let tabText = document.createTextNode("title");
+    let tabText = document.createTextNode(newTabTitle.value);
     newTab.appendChild(tabText);
     newTab.setAttribute('class', 'tab');
     newTab.setAttribute('value', tabCounter);
     document.querySelector("#tabs").appendChild(newTab);
 
     //New Container
+    const newValue = myCodeMirror.getValue();
     let newContainer = document.createElement("DIV");
     newContainer.setAttribute('class', 'container-' + tabCounter + ' container');
+    newContainer.innerHTML += newValue;
     document.querySelector("#containers").appendChild(newContainer);
+    myCodeMirror.setValue('');
+
 
     // Tab listener reinitializer
     tabs = document.querySelectorAll('.tab');
@@ -63,6 +75,5 @@
         activeTab(this);
       });
     }
-
   }
 })();

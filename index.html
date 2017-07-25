@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tabs</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/codemirror.css">
 </head>
 <body>
   <main>
@@ -22,11 +23,19 @@
         <p>To Create a tab you need to give it a title.</p>
         <p>Then you can wright code like in your favorite editor</p>
         <p>Isn`t that friking awesome?!</p>
+        <input id="tab-title" placeholder="Título del tab">
+        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+        <button id="create-tab-button">Crear tab</button>
         <button id="create">Create Tab</button>
       </div>
     </div>
   </main>
 
-  <script src="main.js"></script>
+<script src="lib/codemirror.js"></script>
+<script src="mode/xml/xml.js"></script>
+<script src="mode/javascript/javascript.js"></script>
+<script src="mode/css/css.js"></script>
+<script src="mode/htmlmixed/htmlmixed.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
