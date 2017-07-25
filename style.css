@@ -36,8 +36,13 @@ main {
   background-color: black;
 }
 .container {
-  display: none;
-  padding: 20px;
+  margin-left: 10px;
+  width: 300px;
+  height: auto;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .container h1,
@@ -49,14 +54,3 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
-/*.container {
-    margin-left: 10px;
-    border: 1px solid;
-    width: 300px;
-    height: auto;
-}
-
-.container input {
-    width: inherit;
-    outline: transparent;
-}*/
