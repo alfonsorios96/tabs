@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+}
+
+main {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 350px;
+  margin: 100px auto;
+  overflow: hidden;
+  width: 600px;
+}
+
+#tabs {
+  border-bottom: 1px solid black;
+  list-style: none;
+}
+
+.tab {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  height: 30px;
+  padding: 5px 25px;
+  vertical-align: top;
+  max-width: 250px;
+}
+.tab.active {
+  background-color: black;
+}
+.container {
+  display: none;
+  padding: 20px;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  margin-bottom: 20px;
+  text-align: center;
+}

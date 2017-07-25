@@ -6,22 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<ul id="tabs">
-    <!--
-            Aquí van los tabs (sus títulos)
-        -->
-    <li>Crea tu tab</li>
-</ul>
-<div id="containers">
-    <!--
-            Aquí van los contenedores dinámicos
-        -->
-    <div class="container">
-        <!--
-            Aquí va el contenido de un tab
-        -->
+  <main>
+    <ul id="tabs">
+      <li class="tab" value="1">Welcome</li>
+      <li class="tab" value="2">How to Tab</li>
+    </ul>
+    <div id="containers">
+      <div class="container-1 container">
+        <h1>Welcome to Tab Creator 1.0!</h1>
+        <p>Here you can create as many tabs as you want.</p>
+        <p>The heaven for organized people and click lovers</p>
+      </div>
+      <div class="container-2 container">
+        <h2>Create a tab</h2>
+        <p>To Create a tab you need to give it a title.</p>
+        <p>Then you can wright code like in your favorite editor</p>
+        <p>Isn`t that friking awesome?!</p>
+        <button id="create">Create Tab</button>
+      </div>
     </div>
-</div>
-<script src="main.js"></script>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
