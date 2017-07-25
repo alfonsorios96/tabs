@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tabs</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/codemirror.css">
 </head>
 <body>
 <ul id="tabs">
@@ -17,11 +18,16 @@
             Aquí van los contenedores dinámicos
         -->
     <div class="container">
-        <!--
-            Aquí va el contenido de un tab
-        -->
+        <input placeholder="Título del tab">
+        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+        <button id="create-tab-button">Crear tab</button>
     </div>
 </div>
+<script src="lib/codemirror.js"></script>
+<script src="mode/xml/xml.js"></script>
+<script src="mode/javascript/javascript.js"></script>
+<script src="mode/css/css.js"></script>
+<script src="mode/htmlmixed/htmlmixed.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

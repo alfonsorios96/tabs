@@ -1,0 +1,11 @@
+.container {
+    margin-left: 10px;
+    border: 1px solid;
+    width: 300px;
+    height: auto;
+}
+
+.container input {
+    width: inherit;
+    outline: transparent;
+}
