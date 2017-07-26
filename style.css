@@ -11,7 +11,7 @@ main {
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
-  margin: 100px auto;
+  margin: 60px auto;
   overflow: hidden;
   width: 600px;
 }
@@ -37,8 +37,7 @@ main {
 }
 .container {
   margin-left: 10px;
-  width: 300px;
-  height: auto;
+  height: 500px;
 }
 
 .hidden {
@@ -53,4 +52,27 @@ main {
 .container h6 {
   margin-bottom: 20px;
   text-align: center;
+}
+
+input {
+  width: 90%;
+}
+
+.CodeMirror-scroll {
+  background-color: black;
+  color: white;
+  height: 200px !important;
+  padding-left: 40px;
+  overflow-y: scroll;
+  width: 90%;
+}
+
+#create {
+  background-color: green;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px 25px;
 }
